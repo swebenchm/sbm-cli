@@ -26,14 +26,14 @@ Submit your model's predictions to SWE-bench M:
 
 ```bash
 sbm-cli submit test \
-    --predictions_path predictions.json \
-    --run_id my_run_id
+    --predictions_path example_preds/gpt-4o-swe-agent-m/all_preds_dev.json
 ```
 
 Options:
+- `--run_id`: Run ID to submit predictions to (optional) (default e.g.: gpt-4o-swe-agent-m)
 - `--instance_ids`: Comma-separated list of specific instance IDs to submit (optional)
 - `--output_dir`: Directory to save report files (default: sbm-cli-reports)
-- `--overwrite`: Overwrite existing report
+- `--overwrite`: Overwrite existing report files (default: False)
 - `--gen_report`: Generate a report after evaluation is complete (default: True)
 
 ### Get Report
