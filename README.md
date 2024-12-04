@@ -5,7 +5,7 @@ A command-line interface for interacting with the SWE-bench M API. Use this tool
 ## Installation
 
 ```bash
-pip install sbm-cli
+pip install -e .
 ```
 
 ## Subsets and Splits
